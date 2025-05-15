@@ -1,43 +1,14 @@
-import {useState} from "react"
+import {Routes, Route} from 'react-router-dom'
+import Home from './Home'
 
-function App(){
+const App = () => {
 
-  const [nome,setNome] = useState('Ronaldo')
-
-  const Formulario = () => {
-    return (
-      <div>
-           <input
-      className="nome"
-      onChange={(e)=>{setNome(e.target.value)}}
-      name="nome"
-      type="text" />
-      <button
-      onClick={()=>{alert(nome)}}
-      className="botao">
-      CLIQUE AQUI 
-      </button>
-      </div>
-    )
-  }
-
-  return(
-
-    <div>
-      <h3>pizzaria 2c</h3>
-      <Formulario/>
-      <Formulario/>
-      <Formulario/>
-
-
-    
-
-
-
-    </div>
+  return (
+    <Routes>
+      <Route path = "/" element={<Home/>} />
+    </Routes>
   )
-
-
+  
 }
 
-export default App 
+export default App
