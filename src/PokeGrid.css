@@ -1,13 +1,14 @@
+.PokeGrid
 div {
-    display: flex;
-    flex-wrap: nowrap;
+    display: Grid;
     flex-direction: column;
-    background-color: darkred;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 251, 0);
     width: 400px;
     height: 300px;
     overflow: auto;
 }
- 
+
 img {
     width: 100px;
     height: 80px;
