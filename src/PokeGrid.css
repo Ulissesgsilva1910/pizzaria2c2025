@@ -1,6 +1,7 @@
 .PokeGrid
 div {
     display: Grid;
+    grid-template-columns: 100px 100px;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: rgb(255, 251, 0);
